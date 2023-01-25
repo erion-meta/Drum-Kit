@@ -59,3 +59,12 @@ function buttonAnimation(currentKey) {
     activeButton.classList.remove("pressed");
   }, 150);
 }
+
+// Keywords Button
+$("#bluetooth").change(function () {
+  if ($(this).is(":checked")) {
+    $(".drum").removeClass("keywords");
+  } else {
+    $(".drum").addClass("keywords");
+  }
+});
